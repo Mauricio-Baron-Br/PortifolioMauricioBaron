@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+     background-color: #e3e3e3; 
+}
+.interface{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header .btn-header button, .hero-site button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 10%;
+    color: #fff;
+    transition: .5s;
+}
+/* Estilo do menu dinamico */
+header.rolar{
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000062;
+}
+header.rolar .menu-desktop nav ul li a{
+    color: #000; 
+}
+header.rolar .btn-header button{
+    border: 1px solid #000;
+    color: #000;
+    transition: .5s;
+}
+header.rolar .btn-header button:hover{
+   background-color: #000;
+    color: #fff;
+}
+/* Estilo do header */
+header{
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    max-width: 40px;
+}
+header .menu-desktop nav ul{
+    list-style-type: none;
+}
+header .menu-desktop nav ul li{
+   display: inline-block;
+   margin: 0 40px;
+}
+header .menu-desktop nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header .menu-desktop nav ul li a:hover{
+    transform: scale(1.05);
+}
+header .btn-header button{
+    width: 140px;
+    height: 50px;
+}
+header .btn-header button:hover, .hero-site button:hover{
+    transform: scale(1.05);
+    background-color: #fff;
+    color: #000;
+}
+/* Estilo d obotao do menu moblie */
+header .btn-menu-mob{
+    display: none;
+    position: relative;
+    z-index: 9;
+}
+header .btn-menu-mob div{
+    background-color: #fff;
+    height: 3px;
+    margin: 10px;
+    transition: .2s;
+}
+header .btn-menu-mob .line-menumob-1{
+    width: 30px;
+}
+header .btn-menu-mob .line-menumob-2{
+    width: 20px;
+}
+header.rolar .btn-menu-mob div{
+    background-color: #000;
+}
+header .btn-menu-mob .line-menumob-1.ativo1{
+    transform:  rotate(45deg) translate(30%);
+    background-color: #fff;
+}
+header .btn-menu-mob .line-menumob-2.ativo2{
+    transform:  rotate(-45deg) translate(30%);
+    width: 30px;
+    background-color: #fff;
+}
+body.no-overflow{
+    overflow: hidden;
+}
+/* Estilo menu mob */
+header .menu-mobile{
+    width: 0;
+    height: 0;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+header .menu-mobile nav{
+   width: 100%;
+}
+header .menu-mobile nav a{
+   font-size: 24px;
+   text-decoration: none;
+   color: #fff;
+   padding: 20px 0;
+   display: block;
+   transition: .5s;
+}
+header .menu-mobile nav a:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 20px #fff;
+}
+header .menu-mobile.abrir{
+    width: 100%;
+    height: 100vh;
+}
+/* Estilo do hero */
+section.hero-site{
+    height: 98vh;
+    background-image: url(../img/fundo-inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.hero-site .txt-hero h1{
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 200;
+    
+}
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+}
+.hero-site .txt-hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.hero-site .txt-hero p span{
+    display: block;
+}
+.hero-site button{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+/* Estilo Sobre */
+section.sobre{
+    padding: 80px 0;
+}
+.sobre .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+.sobre .itens-container .img-itens img{
+    max-width: 400px;
+}
+.sobre .itens-container .txt-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+} 
+.sobre .itens-container .txt-itens h3 span{
+    font-weight: 200;
+}
+/* Estilo do rodape */
+footer{
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+footer .top-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s;
+}
+footer .top-footer button:hover{
+    background-color: #fff;
+    color: #000;
+}
+footer .middle-footer{
+    margin: 20px 0;
+}
+footer .middle-footer a{
+    color: #fff;
+    margin: 0px 15px;
+}
+footer .bottom-footer{
+    border-top: 2px solid #fff;
+}
+footer .bottom-footer p{
+    color: #fff;
+    margin-top: 10px;
+}
+/* Estilo dos botões de contato*/
+section.contato{
+    background-color: #fff;
+    padding: 80px 0;
+}
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+.contato .icons-contato a{
+    text-decoration: none;
+}
+.contato .icons-contato button{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   width: 60%;
+   height: 60px;
+   margin: 0 auto 20px auto;
+   padding: 0 60px;
+
+   background-color: transparent;
+   border: 2px solid #000;
+   cursor: pointer;
+
+   transition: .5s;
+}
+.contato .icons-contato button i{
+    font-size: 24px;
+}
+.contato .icons-contato button:hover{
+    background-color: #000;
+}
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
+}
+/* Estilo como funciona*/
+section.como-funciona{
+    padding: 80px;
+}
+.txt-funciona, .instrucoes{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+.como-funciona .txt-funciona {
+   position: sticky;
+   top: 50%;
+   padding-bottom: 35px;
+}
+.como-funciona .txt-funciona h3{
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 300;
+}
+.como-funciona .txt-funciona h3 span{
+   display: block;
+   font-weight: 600;
+}
+.instrucoes .instru-box{
+    display: flex;
+    align-items: center;
+    gap: 20x;
+
+    margin-bottom: 40px;
+    border: 2px solid #000;
+    padding: 20px;
+}
+.instrucoes .instru-box img{
+   max-width: 100px;
+}
+.instrucoes .instru-box h4{
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.instrucoes .instru-box h4 span{
+    font-weight: 300;
+}
+.instrucoes .instru-box p{
+    line-height: 20px;
+}
+ .instrucoes .instru-box p a{
+     color: #000;
+     text-decoration: none;
+     display: inline-block;
+     transition: .2s;
+ }
+ .instrucoes .instru-box p a:hover{
+     transform: scale(1.05);
+ }
+/* Estilo da tecnologia */
+section.tecnologia{
+    height: 600px;
+
+    background-image: url(../img/pogramar.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.tecnologia > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000b9;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.tecnologia > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+.tecnologia h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+/* Estilo Skills */
+.skills{
+    display: flex;
+    border-top: none;
+    padding-top: 0;
+}
+.skill img{
+   max-width: 100%;
+   border-radius: 17px 17px 0 0;
+   transition: all linear 200ms;
+} 
+.skill:hover img {
+    transform: scale(2.04);
+}
+.skill .p {
+    font-size: 12px;
+    color: #444;
+    padding: 5px 20px 20px 20px;
+}
+.skill {
+    margin-bottom: 10px;
+    transition: all linear 200ms;
+    break-inside: avoid-column;
+    background-color: #fff;
+    border-radius: 17px;
+    max-width: 80px;
+    max-height: 80px;
+}
